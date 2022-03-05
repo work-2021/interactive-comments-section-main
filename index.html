@@ -22,6 +22,120 @@
     </div>
   </div>
   <section class="comments">
+    <div class="comment">
+      <div class="content">
+        <div class="user">
+          <div class="image">
+            <img src="images/avatars/image-amyrobson.webp" alt="image amyrobson" />
+          </div>
+          <span class="username">amyrobson</span>
+          <span class="create-time">1 month ago</span>
+        </div>
+        <div class="text">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</div>
+        <div class="options">
+          <div class="score">
+            <button class='minus'>
+              <img src="images/icon-minus.svg" alt="icon minus" />
+            </button>
+            <span>12</span>
+            <button class='plus'>
+              <img src="images/icon-plus.svg" alt="icon plus" />
+            </button>
+          </div>
+          <button class='reply-comment'>
+            <img src="images/icon-reply.svg" alt="icon reply" />
+            <span>Reply</span>
+          </button>
+        </div>
+      </div>
+      <div class='replies'></div>
+    </div>
+    <div class="comment">
+      <div class="content">
+        <div class="user">
+          <div class="image">
+            <img src="images/avatars/image-maxblagun.webp" alt="image maxblagun" />
+          </div>
+          <span class="username">maxblagun</span>
+          <span class="create-time">2 week ago</span>
+        </div>
+        <div class="text">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</div>
+        <div class="options">
+          <div class="score">
+            <button class='minus'>
+              <img src="images/icon-minus.svg" alt="icon minus" />
+            </button>
+            <span>5</span>
+            <button class='plus'>
+              <img src="images/icon-plus.svg" alt="icon plus" />
+            </button>
+          </div>
+          <button class='reply-comment'>
+            <img src="images/icon-reply.svg" alt="icon reply" />
+            <span>Reply</span>
+          </button>
+        </div>
+      </div>
+      <div class='replies'>
+        <div class="reply">
+          <div class="user">
+            <div class="image">
+              <img src="images/avatars/image-ramsesmiron.webp" alt="image ramsesmiron" />
+            </div>
+            <span class="username">ramsesmiron</span>
+            <span class="create-time">1 week ago</span>
+          </div>
+          <div class="text"><span class="replying-to">@maxblagun</span> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</div>
+          <div class="options">
+            <div class="score">
+              <button class='minus'>
+                <img src="images/icon-minus.svg" alt="icon minus" />
+              </button>
+              <span>4</span>
+              <button class='plus'>
+                <img src="images/icon-plus.svg" alt="icon plus" />
+              </button>
+            </div>
+            <button class='reply-reply'>
+              <img src="images/icon-reply.svg" alt="icon reply" />
+              <span>Reply</span>
+            </button>
+          </div>
+        </div>
+        <div class="reply-you">
+          <div class="user">
+            <div class="image">
+              <img src="images/avatars/image-juliusomo.webp" alt="image juliusomo" />
+            </div>
+            <span class="username">juliusomo</span>
+            <span class='you'>you</span>
+            <span class="create-time">2 day ago</span>
+          </div>
+          <div class="text"><span class="replying-to">@ramsesmiron</span> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</div>
+          <div class="options">
+            <div class="score">
+              <button class='minus'>
+                <img src="images/icon-minus.svg" alt="icon minus" />
+              </button>
+              <span>2</span>
+              <button class='plus'>
+                <img src="images/icon-plus.svg" alt="icon plus" />
+              </button>
+            </div>
+            <div class="control">
+              <button class='delete-reply'>
+                <img src="images/icon-delete.svg" alt="icon delete" />
+                <span>Delete</span>
+              </button>
+              <button class='edit-reply'>
+                <img src="images/icon-edit.svg" alt="icon edit" />
+                <span>Edit</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="create-comment">
       <form onsubmit="sendComment();return false" novalidate>
         <div>
@@ -30,7 +144,7 @@
         </div>
         <div>
           <div class="image">
-            <img src="images/avatars/image-abdullah.webp" alt="image abdullah" />
+            <img src="images/avatars/image-juliusomo.webp" alt="image juliusomo" />
           </div>
           <button type="submit">Send</button>
         </div>

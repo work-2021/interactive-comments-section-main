@@ -1,7 +1,8 @@
-let responseContent = new XMLHttpRequest();
 let insertComments = document.querySelector('.comments');
 let layer = document.querySelector('.layer');
 let deleteAlert = document.querySelector('.layer .delete-alert');
+/* get information from API
+let responseContent = new XMLHttpRequest();
 responseContent.onreadystatechange = function() {
   if (responseContent.readyState == 4 && responseContent.status == 200) {
     let data = JSON.parse(responseContent.responseText);
@@ -35,6 +36,7 @@ responseContent.onreadystatechange = function() {
 };
 responseContent.open("GET", "../data/data.json");
 responseContent.send();
+*/
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('delete-comment')) {
     layer.classList.add('active');
@@ -158,13 +160,13 @@ document.addEventListener('click', (e) => {
     });
     let insertYourReply = e.target.parentNode.parentNode.parentNode.lastElementChild;
     let replyingTo = e.target.parentNode.parentNode.children[0].children[1].textContent;
-    insertYourReply.innerHTML += createYourReply('images/avatars/image-abdullah.webp', 'abdullah', `at ${timeNow()}`, replyingTo, '', '0');
+    insertYourReply.innerHTML += createYourReply('images/avatars/image-juliusomo.webp', 'juliusomo', `at ${timeNow()}`, replyingTo, '', '0');
     insertYourReply.children[insertYourReply.children.length - 1].children[2].children[1].children[1].click();
   }
   if (e.target.classList.contains('reply-reply')) {
     let insertYourReply = e.target.parentNode.parentNode.parentNode;
     let replyingTo = e.target.parentNode.parentNode.children[0].children[1].textContent;
-    insertYourReply.innerHTML += createYourReply('images/avatars/image-abdullah.webp', 'abdullah', `at ${timeNow()}`, replyingTo, '', '0');
+    insertYourReply.innerHTML += createYourReply('images/avatars/image-juliusomo.webp', 'juliusomo', `at ${timeNow()}`, replyingTo, '', '0');
     insertYourReply.children[insertYourReply.children.length - 1].children[2].children[1].children[1].click();
   }
   if (e.target.classList.contains('minus')) {
@@ -195,7 +197,7 @@ document.addEventListener('click', (e) => {
 function sendComment() {
   let myComment = document.querySelector('.create-comment form textarea');
   if (validation()) {
-    insertComments.innerHTML += createYourComment('images/avatars/image-abdullah.webp', 'abdullah', `at ${timeNow()}`, myComment.value, '0');
+    insertComments.innerHTML += createYourComment('images/avatars/image-juliusomo.webp', 'juliusomo', `at ${timeNow()}`, myComment.value, '0');
   }
 }
 
@@ -349,7 +351,6 @@ function createYourReply(image, name, time, reply_to, content, score) {
     </div>
   `;
 }
-
 function createReply(image, name, time, reply_to, content, score) {
   return `
     <div class="reply">
