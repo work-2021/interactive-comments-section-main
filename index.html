@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="theme-color" content="hsl(238, 40%, 52%)" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Frontend Mentor | Interactive comments section</title>
+</head>
+
+<body>
+  <div class="layer">
+    <div class="delete-alert">
+      <h3>Delete Comment</h3>
+      <p>Are you sure you want to delete this comment? This will remove the comment and can't be undone.</p>
+      <div class="option">
+        <button class="no">Cancel</button>
+        <button class="yes">Delete</button>
+      </div>
+    </div>
+  </div>
+  <section class="comments">
+    <div class="create-comment">
+      <form onsubmit="sendComment();return false" novalidate>
+        <div>
+          <textarea placeholder="Add a comment .." required oninput="validation()"></textarea>
+          <div class="error active"></div>
+        </div>
+        <div>
+          <div class="image">
+            <img src="images/avatars/image-abdullah.webp" alt="image abdullah" />
+          </div>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Frontend Pro</a>.
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
