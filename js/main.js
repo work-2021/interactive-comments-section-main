@@ -200,13 +200,12 @@ function sendComment() {
     insertComments.innerHTML += createYourComment('images/avatars/image-juliusomo.webp', 'juliusomo', `at ${timeNow()}`, myComment.value, '0');
   }
 }
-
 function timeNow() {
   let h = '';
   let m = '';
   let s = '';
   if (new Date().getHours() < 10) {
-    h = '0' + now.getHours();
+    h = '0' + new Date().getHours();
   } else {
     h = new Date().getHours();
   }
@@ -351,6 +350,7 @@ function createYourReply(image, name, time, reply_to, content, score) {
     </div>
   `;
 }
+
 function createReply(image, name, time, reply_to, content, score) {
   return `
     <div class="reply">
