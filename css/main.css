@@ -317,8 +317,8 @@ body {
   .comments .comment .reply-you .options .score {
     position: absolute;
     top: 50%;
-    left: -93px;
-    max-width: 16%;
+    left: -81px;
+    max-width: 13%;
     transform: translateY(-50%) rotate(90deg);
   }
   .comments .comment .content .options .score span,
