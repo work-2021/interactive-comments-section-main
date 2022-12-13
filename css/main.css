@@ -51,12 +51,12 @@ body {
   transition: .4s;
   position: fixed;
 }
-@media (min-width: 680px) {
+@media (min-width: 768px) {
   .layer.active .delete-alert {
     width: calc(60% - 30px);
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .layer.active .delete-alert {
     width: calc(50% - 30px);
   }
@@ -110,7 +110,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
 }
-@media (min-width: 680px) {
+@media (min-width: 768px) {
   body {
     background-color: #EAECF1;
   }
@@ -119,7 +119,7 @@ body {
     margin: 0 auto;
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .comments {
     width: 63%;
   }
@@ -131,7 +131,7 @@ body {
   padding-left: 10.5px;
   border-left: 1.6px solid #C3C4EF;
 }
-@media (min-width: 680px) {
+@media (min-width: 768px) {
   .comments .comment .replies {
     padding-left: 16px;
     margin-left: 16px;
@@ -162,7 +162,7 @@ body {
   top: 10%;
   left: -12px;
 }
-@media (min-width: 680px) {
+@media (min-width: 768px) {
   .comments .comment .reply:before,
   .comments .comment .reply-you:before {
     width: 32px;
@@ -239,7 +239,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .comments .comment .content,
   .comments .comment .reply,
   .comments .comment .reply-you {
@@ -275,7 +275,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 680px) {
+@media (min-width: 768px) {
   .comments .comment .content .options .score,
   .comments .comment .reply .options .score,
   .comments .comment .reply-you .options .score {
@@ -311,7 +311,7 @@ body {
   color: #5457B6;
   margin: 0 auto;
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .comments .comment .content .options .score,
   .comments .comment .reply .options .score,
   .comments .comment .reply-you .options .score {
@@ -325,14 +325,6 @@ body {
   .comments .comment .reply .options .score span,
   .comments .comment .reply-you .options .score span {
     transform: rotate(-90deg);
-  }
-}
-@media (min-width: 1200px) {
-  .comments .comment .content .options .score,
-  .comments .comment .reply .options .score,
-  .comments .comment .reply-you .options .score {
-    left: -81px;
-    max-width: 13%;
   }
 }
 @media (min-width: 1200px) {
@@ -365,13 +357,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 680px) {
+@media (min-width: 768px) {
   .comments .comment .content .options button,
   .comments .comment .reply .options button {
     width: 20%;
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .comments .comment .content .options > button,
   .comments .comment .reply .options > button,
   .comments .options .control {
@@ -442,7 +434,7 @@ body {
   justify-content: center;
   cursor: pointer;
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .comments .create-comment {
     position: relative;
   }
@@ -519,7 +511,7 @@ body {
   width: 18px;
   margin-right: 5px;
 }
-@media (min-width: 980px) {
+@media (min-width: 992px) {
   .error {
     width: 70%;
     margin-left: 10%;
