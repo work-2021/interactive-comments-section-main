@@ -327,6 +327,22 @@ body {
     transform: rotate(-90deg);
   }
 }
+@media (min-width: 1200px) {
+  .comments .comment .content .options .score,
+  .comments .comment .reply .options .score,
+  .comments .comment .reply-you .options .score {
+    left: -81px;
+    max-width: 13%;
+  }
+}
+@media (min-width: 1200px) {
+  .comments .comment .content .options .score,
+  .comments .comment .reply .options .score,
+  .comments .comment .reply-you .options .score {
+    left: -81px;
+    max-width: 13%;
+  }
+}
 .comments .options .control {
   width: 160px;
   display: flex;
